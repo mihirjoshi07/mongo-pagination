@@ -40,10 +40,10 @@ const studentSchema = new mongoose.Schema({
 // Mongoose Model for the students collection
 const Student = mongoose.model("Student", studentSchema);
 
-// Health route for checking the server status
-app.get("/health", (req, res) => {
-    res.send("Health route....");
-});
+// // Health route for checking the server status
+// app.get("/health", (req, res) => {
+//     res.send("Health route....");
+// });
 
 
 app.get("/get-data/:page", async (req, res) => {
